@@ -30,6 +30,10 @@ run git clone https://github.com/libimobiledevice/libplist.git /usr/src/libplist
 cd /usr/src/libplist && \
 ./autogen.sh && make && make install 
 
+run git clone https://github.com/libimobiledevice/libtatsu.git /usr/src/libtatsu && \
+cd /usr/src/libtatsu && \
+./autogen.sh && make && make install 
+
 run git clone https://github.com/libimobiledevice/libimobiledevice-glue.git /usr/src/libimobiledevice-glue && \
 cd /usr/src/libimobiledevice-glue && \
 ./autogen.sh && make && make install
@@ -44,7 +48,7 @@ cd /usr/src/libimobiledevice && \
 ./autogen.sh && make && make install
 
 run git clone https://github.com/libimobiledevice/usbmuxd.git /usr/src/usbmuxd && \
-cd /usr/src/usbmuxd && git checkout 1.1.1 && \
+cd /usr/src/usbmuxd && \
 ./autogen.sh && make && make install
 
 run git clone https://github.com/libimobiledevice/libirecovery.git /usr/src/libirecovery && \
